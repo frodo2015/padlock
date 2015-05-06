@@ -2,7 +2,7 @@
 
 apt-get install devscripts fakeroot build-essential zlib1g-dev
 
-wget https://github.com/frodo2015/padlock/blob/master/0001-crypto-hmac-support-EVP_MD_CTX_FLAG_ONESHOT-and-set-.patch \
+wget https://github.com/frodo2015/padlock/blob/master/0001-crypto-hmac-support-EVP_MD_CTX_FLAG_ONESHOT-and-set-.patch
 
 wget https://github.com/frodo2015/padlock/blob/master/0002-engines-e_padlock-backport-cvs-head-changes.patch
 
