@@ -1,0 +1,25 @@
+diff -urN openssl-0.9.8e.orig/ssl/ssl_algs.c openssl-0.9.8e/ssl/ssl_algs.c
+--- openssl-0.9.8e.orig/ssl/ssl_algs.c	2006-06-09 17:42:18.000000000 +0200
++++ openssl-0.9.8e/ssl/ssl_algs.c	2007-07-18 18:12:26.000000000 +0200
+@@ -57,6 +57,7 @@
+  */
+ 
+ #include <stdio.h>
++#include <openssl/engine.h>
+ #include <openssl/objects.h>
+ #include <openssl/lhash.h>
+ #include "ssl_locl.h"
+@@ -126,6 +127,13 @@
+ #endif
+ 	/* initialize cipher/digest methods table */
+ 	ssl_load_ciphers();
++
++	/* Init available hardware crypto engines. */
++	ENGINE_load_builtin_engines();
++	ENGINE_register_all_complete();
++	ENGINE * padlock = ENGINE_by_id("padlock");
++	if (padlock) ENGINE_set_default_ciphers(padlock);
++
+ 	return(1);
+ 	}
+ 
