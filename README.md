@@ -1,10 +1,10 @@
 # padlock
-apt-get install devscripts fakeroot build-essential zlib1g-dev
-wget https://github.com/frodo2015/padlock/blob/master/0001-crypto-hmac-support-EVP_MD_CTX_FLAG_ONESHOT-and-set-.patch \
-     https://github.com/frodo2015/padlock/blob/master/0002-engines-e_padlock-backport-cvs-head-changes.patch \
-     https://github.com/frodo2015/padlock/blob/master/0003-engines-e_padlock-implement-sha1-sha224-sha256-accel.patch \
-     https://github.com/frodo2015/padlock/blob/master/0004-crypto-engine-autoload-padlock-dynamic-engine.patch \
-     https://github.com/frodo2015/padlock/blob/master/0005-auto-engine.diff
+#apt-get install devscripts fakeroot build-essential zlib1g-dev
+#wget https://github.com/frodo2015/padlock/blob/master/0001-crypto-hmac-support-EVP_MD_CTX_FLAG_ONESHOT-and-set-.patch \
+#wget https://github.com/frodo2015/padlock/blob/master/0002-engines-e_padlock-backport-cvs-head-changes.patch
+#wget https://github.com/frodo2015/padlock/blob/master/0003-engines-e_padlock-implement-sha1-sha224-sha256-accel.patch 
+#wget https://github.com/frodo2015/padlock/blob/master/0004-crypto-engine-autoload-padlock-dynamic-engine.patch
+#wget https://github.com/frodo2015/padlock/blob/master/0005-auto-engine.diff
      
      dget http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.0.1e-2+deb7u13.dsc
 # check current URL for actual *.dsc at https://packages.debian.org/wheezy/openssl
