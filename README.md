@@ -29,7 +29,7 @@ wget https://romanrm.net/dl/padlock/0001-crypto-hmac-support-EVP_MD_CTX_FLAG_ONE
      https://romanrm.net/dl/padlock/0005-auto-engine.diff
 
 dget http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.0.1e-2+deb7u16.dsc
-# Check https://packages.debian.org/wheezy/openssl for last revision
+Check https://packages.debian.org/wheezy/openssl for last revision
 
 dpkg-source -x *.dsc
 
@@ -37,10 +37,10 @@ cd openssl*/
 patch -p1 < ../0001*; patch -p1 < ../0002*; patch -p1 < ../0003*; patch -p1 < ../0004*; patch -p1 < ../0005*
 
 dpkg-source --commit
-# You will be asked for a filename (enter "padlock") and launch a text editor, just press Ctrl-X(nano) or enter :x(vim) to exit
+You will be asked for a filename (enter "padlock") and launch a text editor, just press Ctrl-X(nano) or enter :x(vim) to exit
 
 dpkg-buildpackage -rfakeroot -b
-# If needed install additional development packages. Try again
+If needed install additional development packages. Try again
 
 cd ..
 dpkg -i openssl*.deb libssl1.0.0*.deb
