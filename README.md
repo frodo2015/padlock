@@ -22,11 +22,7 @@ https://raw.githubusercontent.com/frodo2015/padlock/master/README.md
 
 apt-get install devscripts fakeroot build-essential zlib1g-dev
 
-wget https://romanrm.net/dl/padlock/0001-crypto-hmac-support-EVP_MD_CTX_FLAG_ONESHOT-and-set-.patch \
-     https://romanrm.net/dl/padlock/0002-engines-e_padlock-backport-cvs-head-changes.patch \
-     https://romanrm.net/dl/padlock/0003-engines-e_padlock-implement-sha1-sha224-sha256-accel.patch \
-     https://romanrm.net/dl/padlock/0004-crypto-engine-autoload-padlock-dynamic-engine.patch \
-     https://romanrm.net/dl/padlock/0005-auto-engine.diff
+get the patches
 
 dget http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.0.1e-2+deb7u16.dsc
 Check https://packages.debian.org/wheezy/openssl for last revision
