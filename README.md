@@ -23,6 +23,11 @@ https://raw.githubusercontent.com/frodo2015/padlock/master/README.md
 apt-get install devscripts fakeroot build-essential zlib1g-dev
 
 get the patches
+wget https://raw.githubusercontent.com/frodo2015/padlock/master/0001-crypto-hmac-support-EVP_MD_CTX_FLAG_ONESHOT-and-set-.patch
+wget https://raw.githubusercontent.com/frodo2015/padlock/master/0002-engines-e_padlock-backport-cvs-head-changes.patch
+wget https://raw.githubusercontent.com/frodo2015/padlock/master/0003-engines-e_padlock-implement-sha1-sha224-sha256-accel.patch
+wget https://raw.githubusercontent.com/frodo2015/padlock/master/0004-crypto-engine-autoload-padlock-dynamic-engine.patch
+wget https://raw.githubusercontent.com/frodo2015/padlock/master/0005-auto-engine.diff
 
 dget http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.0.1e-2+deb7u16.dsc
 Check https://packages.debian.org/wheezy/openssl for last revision
@@ -41,4 +46,3 @@ If needed install additional development packages. Try again
 cd ..
 dpkg -i openssl*.deb libssl1.0.0*.deb
 aptitude hold openssl libssl1.0.0
-
